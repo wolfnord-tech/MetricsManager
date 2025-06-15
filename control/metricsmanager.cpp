@@ -7,11 +7,7 @@
 using namespace std;
 
 void MetricsManager::collectMetrics(string timestamp, vector<Metrics> metrics) {
-    if (timestamp != last_timestamp && this->metrics.empty()) // Значение не совпадает с прошлым и массив пустой
-        this->metrics[timestamp] = metrics;
-    else if (!this->metrics.empty()) // Массив не пустой
-        this->metrics[timestamp] = metrics;
-    last_timestamp = timestamp;
+    this->metrics[timestamp] = metrics;
     cout << timestamp << endl;
 }
 
