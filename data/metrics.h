@@ -5,7 +5,7 @@
 #include <string>
 using namespace std;
 
-// Является объектом каждой метрики
+// Класс Metrics отвечает за объекты каждой метрики
 class Metrics {
     protected:
         string from;
