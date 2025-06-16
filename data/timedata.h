@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-// Является объектом каждого таймштампа
+// Класс TimeData отвечает за объекты каждой метрики
 class TimeData {
     private:
         string formatted_time; // Поле для хранения отформатированного времени
